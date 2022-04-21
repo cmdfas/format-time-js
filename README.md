@@ -26,7 +26,7 @@
 转换后：2017-01-01 00:00:00
 
 
-```
+```javascript
 const assert = require('assert');
 
 function formate(fmt, date) {
@@ -59,5 +59,4 @@ assert.equal(formate('{yy}-{M}-{d} {hh}:{mm}:{ss}', new Date(testDate)), '21-2-3
 assert.equal(formate('{yy}-{M}-{d} {h}:{mm}:{ss}', new Date(testDate)), '21-2-3 9:01:03');
 assert.equal(formate('{yy}-{M}-{d} {h}:{m}:{ss}', new Date(testDate)), '21-2-3 9:1:03');
 assert.equal(formate('{yy}-{M}-{d} {h}:{m}:{s}', new Date(testDate)), '21-2-3 9:1:3');
-
 ```
